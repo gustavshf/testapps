@@ -1,0 +1,170 @@
+<html lang="en">
+  <head>
+    <style type="text/css">
+
+.app-menu {
+ background-image: url("images/room.jpg");
+position:fixed;
+top:30px;
+height:100%;
+width:100%;
+	left: -300px;
+	transition: left 300ms linear;
+	box-shadow: inset 0 1px 1px 1px #000,
+                inset 0 0 0 9px #111,
+                0 0 0 1px #ccc,
+                0 0 1px 2px hsla(0,0%,0%,.4),
+                0 0 50px hsla(0,0%,0%,.3), 
+    0 0 100px hsla(0,0%,0%,.5), 
+    0 0 200px hsla(0,0%,0%,.5);
+}
+
+.app-menu-open  {
+ background-image: url("images/room.jpg");
+
+position:fixed;
+top:30px;
+height:100%;
+width:100%;
+	left: 0px;
+	transition: left 100ms linear;
+	box-shadow: inset 0 1px 1px 1px #000,
+                inset 0 0 0 9px #111,
+                0 0 0 1px #ccc,
+                0 0 1px 2px hsla(0,0%,0%,.4),
+                0 0 50px hsla(0,0%,0%,.3), 
+    0 0 100px hsla(0,0%,0%,.5), 
+    0 0 200px hsla(0,0%,0%,.5);
+}
+/*
+.app-menu {
+height:300px;
+width:300px;
+background-color:green;
+	-webkit-transform: translateX(-100%);
+			transform: translateX(-100%);
+	transition: transform 300ms linear;
+}
+.app-menu-open .app-menu {
+height:300px;
+width:300px;
+background-color:green;
+	-webkit-transform: none;
+			transform: none;
+	transition: transform 300ms linear;
+}
+*/
+
+
+
+/* aux */
+
+body {
+  margin: 0;
+}
+
+.layout {
+  width: 375px;
+  height: 667px;
+   background-image: url("images/room.jpg");
+  position: relative;
+}
+
+.header {
+  background-color: #ccc;
+}
+
+.menu-icon {
+  content: "Menu";
+  color: #fff;
+  background-color: #666;
+  width: 40px;
+  height: 40px;
+}
+
+
+.menu:after {
+  width: 375px;
+  height: 667px;
+}
+.divyellow{
+background-color:yellow;
+width:10%;
+height:10%;
+float:left;
+}
+.divred{
+background-color:red;
+width:10%;
+height:10%;
+float:left;
+}
+
+
+    </style>
+
+<script> 
+function toggleMenu(){
+if(!document.getElementById("appmenu").classList.contains("app-menu-open")){
+document.getElementById("appmenu").className ='app-menu-open';
+}
+else{
+//document.getElementById("appmenu").classList.remove("app-menu-open");
+document.getElementById("appmenu").className ='app-menu';
+}
+}
+ </script>
+  </head>
+
+  <body>
+  <div class="layout">
+	<div class="app-menu" id="appmenu">
+	<div class=""></div>
+	<div class="divred"></div>
+	<div class="divyellow"></div>
+	<div class="divred"></div>
+	<div class="divyellow"></div>
+	<div class="divred"></div>
+	<div class="divyellow"></div>
+	<div class="divred"></div>
+	<div class="divyellow"></div>
+	<div class="divred"></div>
+	<div class="divyellow"></div>
+	<div class="divred"></div>
+	<div class="divyellow"></div>
+	<div class="divred"></div>
+	<div class="divyellow"></div>
+	<div class="divred"></div>
+	<div class="divyellow"></div><div class="divred"></div>
+	<div class="divyellow"></div>
+	<div class="divred"></div>
+	<div class="divyellow"></div>
+	<div class="divred"></div>
+	<div class="divyellow"></div>
+	<div class="divred"></div>
+	<div class="divyellow"></div>
+	<div class="divred"></div>
+	<div class="divyellow"></div>
+	<div class="divred"></div>
+	<div class="divyellow"></div>
+	<div class="divred"></div>
+	<div class="divyellow"></div>
+	<div class="divred"></div>
+	<div class="divyellow"></div>
+	<div class="divred"></div>
+	<div class="divyellow"></div>
+	<div class="divred"></div>
+	<div class="divyellow"></div>
+	<div class="divred"></div>
+	<div class="divyellow"></div>
+	<div class="divred"></div>
+	<div class="divyellow"></div>
+	
+	
+	</div>
+	<div class="header">
+		<div class="menu-icon" onclick="toggleMenu()"></div>
+	</div>
+</div>
+  </body>
+  </html>

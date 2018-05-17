@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<html>
+    <head>
+        <title>Oliver's JS Raytracer</title>
+        
+        <style type="text/css">html*#canvasError { display: none; }</style>
+    </head>
+    <body>
+        <canvas id="renderCanvas" width="400px" height="400px">
+            <div id="canvasError">You need a browser that supports DOM Canvas to view this demo, such as Safari (or any other WebKit based browser), or more or less any other non-IE browser </div>
+        </canvas><br />
+        <div id="console"></div>
+        <br />
+        <div id="controls">
+		<input id="numberOfWorkers" type="number" ></input>
+		<div id="scenarios">
+  <input type="radio" id="s1" name="scenario" value="stringify" checked="checked"> Stringify
+  <input type="radio" id="s2" name="scenario" value="plainObjects"> Plain Objects
+</div>
+        <button id="renderButton" onclick="render()">Go!</button>
+        </div>
+    </body>
+	<script src="index.js">
+		
+        </script>
+</html>
